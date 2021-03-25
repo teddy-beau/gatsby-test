@@ -6,34 +6,20 @@
  */
 
 import * as React from "react"
+import "@fontsource/open-sans" // Defaults to weight 400 with all styles included.
+import "@fontsource/open-sans/800.css"
+import "@fontsource/open-sans/700.css"
 
-import Header from "./header"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout = ({ children, path }) => {
-  console.log("layout", path)
+  // console.log("layout", path)
   return (
     <>
       <Header path={path} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-            fontSize: 14,
-            textAlign: "center",
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      <main>{children}</main>
+      <Footer />
     </>
   )
 }

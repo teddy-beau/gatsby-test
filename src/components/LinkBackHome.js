@@ -10,6 +10,9 @@ const LinkBackHome = () => {
       css={css`
         color: #0070f3;
         text-decoration: none;
+        font-size: 18px;
+        margin-top: 50px;
+        display: block;
         &:hover {
           text-decoration: underline;
         }

@@ -36,7 +36,7 @@ const Header = ({ path }) => {
             <Link
               to="/"
               css={css`
-                color: #222;
+                color: #111;
                 text-decoration: none;
                 &:hover {
                   text-decoration: underline;
@@ -69,7 +69,7 @@ const Header = ({ path }) => {
             <Link
               to="/"
               css={css`
-                color: #222;
+                color: #111;
                 text-decoration: none;
                 &:hover {
                   text-decoration: underline;
